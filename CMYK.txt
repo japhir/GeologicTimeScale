@@ -1,0 +1,341 @@
+“Ionian” (0/5/20/0)
+Calabrian (0/5/25/0)
+Gelasian (0/5/35/0)
+
+Pliocene
+(0/0/40/0)
+
+Piacenzian (0/0/25/0)
+Zanclean (0/0/30/0)
+
+Messinian (0/0/55/0)
+Tortonian (0/0/60/0)
+Miocene
+(0/0/100/0)
+
+Serravallian (0/0/65/0)
+Langhian (0/0/70/0)
+Burdigalian (0/0/75/0)
+Aquitanian (0/0/80/0)
+
+Oligocene
+(0/25/45/0)
+
+Chattian (0/10/30/0)
+Rupelian (0/15/35/0)
+Priabonian (0/20/30/0)
+
+Eocene
+(0/30/50/0)
+
+Bartonian (0/25/35/0)
+Lutetian (0/30/40/0)
+Ypresian (0/35/45/0)
+
+Paleocene
+(0/35/55/0)
+
+Thanetian (0/25/50/0)
+Selandian (0/25/55/0)
+Danian (0/30/55/0)
+Campanian (10/0/50/0)
+
+Upper
+(35/0/75/0)
+
+Santonian (15/0/55/0)
+Coniacian (20/0/60/0)
+Turonian (25/0/65/0)
+Cenomanian (30/0/70/0)
+Albian (20/0/40/0)
+Aptian (25/0/45/0)
+
+Lower
+(45/0/70/0)
+
+Barremian 30/0/50/0)
+Hauterivian (35/0/55/0)
+Valanginian (40/0/60/0)
+Berriasian (45/0/65/0)
+
+Tithonian (15/0/0/0)
+Kimmeridgian (20/0/0/0)
+Oxfordian (25/0/0/0)
+Callovian (25/0/5/0)
+
+Middle
+(50/0/5/0)
+
+Bathonian (30/0/5/0)
+Bajocian (35/0/5/0)
+Aalenian (40/0/5/0)
+Toarcian (40/5/0/0)
+
+Lower
+(75/5/0/0)
+
+Pliensbachian (50/5/0/0)
+Sinemurian (60/5/0/0)
+Hettangian (70/5/0/0)
+
+Upper
+(25/40/0/0)
+Middle
+(30/55/0/0)
+
+Rhaetian (10/25/0/0)
+Norian (15/30/0/0)
+Carnian (20/35/0/0)
+Ladinian (20/45/0/0)
+Anisian (25/50/0/0)
+
+Lower
+(40/75/0/0)
+
+Olenekian (30/65/0/0)
+
+Lopingian
+(0/35/30/0)
+
+Changhsingian (0/25/20/0)
+
+Induan (35/70/0/0)
+Wuchiapingian (0/30/25/0)
+Capitanian (0/40/35/0)
+
+Guadalupian
+(0/55/50/0)
+
+Wordian (0/45/40/0)
+Roadian (0/50/45/0)
+Kungurian (10/45/40/0)
+
+Cisuralian
+(5/65/60/0)
+
+Mississippian Pennsylvanian
+(60/25/55/0) (40/10/20/0)
+
+Pleistocene
+(0/5/30/0)
+
+Maastrichtian (5/0/45/0)
+
+M e s o z o i c (60/0/10/0)
+Cretaceous (50/0/75/0)
+
+Upper
+(30/0/0/0)
+
+Artinskian (10/50/45/0)
+Sakmarian (10/55/50/0)
+Asselian (10/60/55/0)
+
+Upper
+
+Gzhelian (20/10/15/0)
+
+(25/10/20/0) Kasimovian
+
+(25/10/15/0)
+
+(35/10/20/0)
+
+Middle
+
+Moscovian (30/10/20/0)
+
+(45/10/20/0)
+
+Lower
+
+Bashkirian (40/10/20/0)
+
+(30/15/55/0)
+
+Upper
+
+Serpukhovian (25/15/55/0)
+
+(40/15/55/0)
+
+Middle
+
+Visean (35/15/55/0)
+
+Lower
+
+(50/15/55/0) Tournaisian
+
+(45/15/55/0)
+
+Upper
+(5/10/35/0)
+
+Famennian (5/5/20/0)
+
+Middle
+(5/20/55/0)
+
+Givetian (5/10/45/0)
+
+Lower
+(10/30/65/0)
+Pridoli
+
+(10/0/10/0)
+
+Frasnian (5/5/30/0)
+Eifelian (5/15/50/0)
+Emsian (10/15/50/0)
+Pragian (10/20/55/0)
+Lochkovian (10/25/60/0)
+(10/0/10/0)
+
+Ludlow
+(25/0/15/0)
+
+Ludfordian (15/0/10/0)
+
+Wenlock
+(30/0/20/0)
+
+Homerian (20/0/15/0)
+
+Llandovery
+(40/0/25/0)
+
+Gorstian (20/0/10/0)
+Sheinwoodian (25/0/20/0)
+Telychian (25/0/15/0)
+Aeronian (30/0/20/0)
+Rhuddanian (35/0/25/0)
+
+Upper
+(50/0/40/0)
+
+Hirnantian (35/0/30/0)
+Katian (40/0/35/0)
+Sandbian (45/0/40/0)
+
+Middle
+(70/0/50/0)
+Lower
+(90/0/60/0)
+
+Darriwilian (55/0/35/0)
+Dapingian (60/0/40/0)
+Floian (75/0/45/0)
+Tremadocian (80/0/50/0)
+
+Stage 10 (10/0/20/0)
+Furongian Jiangshanian (15/0/25/0)
+(30/0/40/0)
+Paibian (20/0/30/0)
+Series 3
+(35/5/45/0)
+
+Guzhangian (20/5/30/0)
+Drumian (25/5/35/0)
+
+P r e c a m b r i a n (0/75/30/0)
+Archean (0/100/0/0)
+Proterozoic (0/80/35/0)
+
+(0/5/5/0)
+Upper (0/5/15/0)
+
+Cambrian (50/20/65/0)
+
+(0/5/10/0)
+
+P h a n e r o z o i c (40/0/5/0)
+P a l e o z o i c (40/10/40/0)
+M e s o z o i c (60/0/10/0)
+Carboniferous (60/15/30/0)
+Permian (5/75/75/0)
+Triassic (50/80/0/0)
+Jurassic (80/0/5/0)
+
+P h a n e r o z o i c (40/0/5/0)
+C e n o z o i c (5/0/90/0)
+Paleogene (0/40/60/0) Neogene (0/10/90/0)
+
+(0/0/50/0)
+
+Quaternary
+
+Holocene
+
+P h a n e r o z o i c (40/0/5/0)
+P a l e o z o i c (40/10/40/0)
+Ordovician (100/0/60/0) Silurian (30/0/25/0) Devonian (20/40/75/0)
+
+CMYK Color Code according to the Commission for the Geological Map of the World (CGMW),
+Paris, France
+Neoproterozoic
+(0/30/70/0)
+Mesoproterozoic
+(0/30/55/0)
+
+Ediacaran (0/15/55/0)
+Cryogenian (0/20/60/0)
+Tonian (0/25/65/0)
+Stenian (0/15/35/0)
+Ectasian (0/20/40/0)
+Calymmian (0/25/45/0)
+Statherian (0/55/10/0)
+
+Paleoproterozoic
+(0/75/30/0)
+
+Orosirian (0/60/15/0)
+Rhyacian (0/65/20/0)
+Siderian (0/70/25/0)
+
+Neoarchean
+(0/40/5/0)
+
+(0/35/5/0)
+
+Mesoarchean
+(0/60/5/0)
+
+(0/50/5/0)
+
+Paleoarchean
+(0/75/0/0)
+
+(0/60/0/0)
+
+Eoarchean
+(10/100/0/0)
+
+(5/90/0/0)
+
+Hadean (30/100/0/0)
+The CMYK color code is an additive
+model with percentages of Cyan,
+Magenta, Yellow and Black. For
+example: the CMYK color for Devonian
+(20/40/75/0) is a mixture of 20% Cyan,
+40% Magenta, 75% Yellow and 0%
+Black. The CMYK values are the primary
+reference system for designating the
+official colors for these geological units.
+
+Stage 5 (30/5/40/0)
+Series 2
+(40/10/50/0)
+Terreneuvian
+(45/15/55/0)
+
+Stage 4 (30/10/40/0)
+Stage 3 (35/10/45/0)
+Stage 2 (35/15/45/0)
+Fortunian (40/15/50/0)
+
+Color composition by J.M. Pellé (BRGM, France)
+Dec. 2011
+
+
