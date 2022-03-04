@@ -1,0 +1,21 @@
+#+title: Make a nice Geologic Time Scale
+
+In this repository I create a nice PDF on A3 size to print the Geologic Time Scale on a linear scale, so that it doesn't seem like the recent time periods took the same amount of time as the Precambrian.
+
+I had to copy over all the colours and age ranges, because the official tools only provide a PDF.
+
+If you want to use this figure for your own plots you can either:
+
+1. load in the ~GTS_widths.csv~ file and plot it yourself
+   #+begin_src R
+     library(readr)
+     GTS <- read_csv("https://github.com/japhir/GeologicTimeScale/raw/master/GTS_widths.csv")
+     # create plot yourself
+   #+end_src
+
+2. load in the ~gts_plot.rds~ file and tweak the plot itself.
+#+begin_src R
+  library(ggplot2)
+  library(readr)
+  gts <- read_rds()
+#+end_src

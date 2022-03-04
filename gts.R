@@ -35,32 +35,41 @@ write_csv(GTS, "GTS_widths.csv")
 # load result from previous calculations
 GTS <- read_csv("GTS_widths.csv")
 
+# make the plot
 gts <- GTS %>%
   ggplot() +
+  # these are the ages of the periods
   geom_text(aes(x = bot, y = 2.1, label = bot),
             data = filter(GTS, type == "Period"), size = 8, hjust = 0) +
+  # these are the rectangles for each time period
   geom_rect(aes(ymin = start, ymax = end,
     xmin = top, xmax = bot), show.legend = FALSE, fill = GTS$col,
     col = "black") +
+  # the labels for each time period, with the direction etc.
   geom_text(aes(x = meanage, y = meanwidth, label = name),
     size = GTS$fontsize * .3,
     angle = GTS$fontangle,
     ## hjust = GTS$fonthjust,
     col = GTS$fontcolor,
     fontface = GTS$fontface) +
+  # the ages for the older ones
   geom_text(aes(x = bot, y = 5.1, label = bot),
             data = filter(GTS, type == "Age"), size = 6, hjust = 0) +
   labs(x = "Age (million years before present)", y = "") +
-  scale_x_reverse(breaks = c(seq(0, 65, 5), seq(70, 4600, 10))) +
+  ## scale_x_reverse(breaks = c(seq(0, 65, 5), seq(70, 4600, 10))) +
   ## scale_x_log10() +
   ## scale_x_continuous(trans = reverselog_trans(10)) +
   ## coord_polar() + # almost a pie-chart!
-  coord_flip() +
-  theme_classic() + theme(axis.title.x = element_blank(),
-                                         axis.text.x = element_blank(),
-                                         axis.line.x = element_blank(),
-                                         axis.ticks.x = element_blank(),
-                                         axis.text.y = element_text(size = 18))
+  ## coord_flip() +
+  # theme tweaks: don't plot anything for the y axis
+  theme_classic() + theme(axis.title.y = element_blank(),
+                          axis.text.y = element_blank(),
+                          axis.line.y = element_blank(),
+                          axis.ticks.y = element_blank(),
+                          axis.text.x = element_text(size = 18),
+                          axis.title.x = element_text(size = 18))
+
+write_rds(gts, "out/gts_plot.rds")
 
 ## gts
 # width = 1 x A3/A4, height = 4 x A3 paper heights
