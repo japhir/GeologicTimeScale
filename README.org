@@ -48,6 +48,7 @@ Create plot of "data"
 #+end_src
 
 #+RESULTS:
+
 [[file:imgs/iris.png]]
 
 Now create the desired subset of the GTS plot
@@ -86,6 +87,7 @@ Now create the desired subset of the GTS plot
 #+end_src
 
 #+RESULTS:
+
 [[file:imgs/gts_data.png]]
 
 And to combine the two, make sure they have precisely the same x axis and then join them together using patchwork.
@@ -102,4 +104,5 @@ And to combine the two, make sure they have precisely the same x axis and then j
 #+end_src
 
 #+RESULTS:
+
 [[file:imgs/gts_plus_data.png]]
