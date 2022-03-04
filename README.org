@@ -23,6 +23,8 @@ If you want to use this figure for your own plots you can either:
 
 I prefer to read in the data, filter out what I want (e.g., only Epochs), then make the plot full-sized and add it to the data with [[https://patchwork.data-imaginist.com/][patchwork]].
 
+*NOTE: it's probably much better to use a full-fledged package to add the Geologic Time Scale to your plots, e.g. using the [[https://github.com/willgearty/deeptime/][deeptime]] package!*
+
 * full workflow
 load libraries
 #+begin_src R
