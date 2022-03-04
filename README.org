@@ -1,4 +1,5 @@
 #+title: Make a nice Geologic Time Scale
+#+property: header-args:R  :session *R:GTS* :exports both :results output :eval no-export
 
 In this repository I create a nice PDF on A3 size to print the Geologic Time Scale on a linear scale, so that it doesn't seem like the recent time periods took the same amount of time as the Precambrian.
 
@@ -14,8 +15,91 @@ If you want to use this figure for your own plots you can either:
    #+end_src
 
 2. load in the ~gts_plot.rds~ file and tweak the plot itself.
+   #+begin_src R
+     library(ggplot2)
+     library(readr)
+     gts <- read_rds("https://github.com/japhir/GeologicTimeScale/raw/master/out/gts_plot.rds")
+   #+end_src
+
+I prefer to read in the data, filter out what I want (e.g., only Epochs), then make the plot full-sized and add it to the data with [[https://patchwork.data-imaginist.com/][patchwork]].
+
+* full workflow
+load libraries
 #+begin_src R
+  library(dplyr)
   library(ggplot2)
   library(readr)
-  gts <- read_rds()
 #+end_src
+
+Read in my weird data frame
+#+begin_src R
+  GTS <- read_csv("https://github.com/japhir/GeologicTimeScale/raw/master/GTS_widths.csv")
+#+end_src
+
+Create plot of "data"
+#+begin_src R :results output graphics file :file imgs/iris.png :width 800 :height 500
+  dataplot <- iris |>
+    # create fake ages
+    mutate(age = rep(seq(0, 44, length.out = 50), 3)) |>
+    ggplot(aes(x = age, y = Petal.Length, colour = Species)) +
+    geom_point() +
+    geom_line()
+  dataplot
+#+end_src
+
+#+RESULTS:
+[[file:imgs/iris.png]]
+
+Now create the desired subset of the GTS plot
+#+begin_src R :results output graphics file :file imgs/gts_data.png :width 800 :height 80
+  gtsplot <- GTS |>
+    # subset it to only show Periods
+    filter(type == "Period") |>
+    # filter to our time range
+    filter(top < 55) |>
+    # rectangles for each period
+    ggplot() +
+    geom_rect(aes(ymin = start, ymax = end, xmin = top, xmax = bot, fill = col),
+              show.legend = FALSE, col = "black") +
+    # make sure that the fill colour is given by our hex colours
+    scale_fill_identity() +
+    # add period names
+    geom_text(aes(x = meanage, y = meanwidth, label = name, size = fontsize * .5,
+                  ## angle = fontangle,
+                  col = fontcolor, fontface = fontface)) +
+    # make sure the font size is set to your liking
+    scale_size_identity() +
+    scale_colour_identity() +
+    # add axis label for age axis
+    labs(x = "Age (millions of years ago)") +
+    theme(
+      # remove gray panel
+      panel.grid = element_blank(),
+      panel.background = element_blank(),
+      # remove y axis entirely
+      axis.line.y = element_blank(),
+      axis.title.y = element_blank(),
+      axis.text.y = element_blank(),
+      axis.ticks.y = element_blank()) +
+    coord_cartesian(xlim = c(0, 40))
+  gtsplot
+#+end_src
+
+#+RESULTS:
+[[file:imgs/gts_data.png]]
+
+And to combine the two, make sure they have precisely the same x axis and then join them together using patchwork.
+
+#+begin_src R :results output graphics file :file imgs/gts_plus_data.png :width 800 :height 800
+  library(patchwork)
+  (dataplot +
+   # make sure that it has precisely the same x axis range
+   coord_cartesian(xlim = c(0, 40)) +
+   # then remove the redundant x-axis from the data
+   theme(axis.text.x = element_blank(), axis.title.x = element_blank())) /
+    # and add the gts beneath the data, at a smaller size
+    gtsplot + plot_layout(heights = c(1, .05))
+#+end_src
+
+#+RESULTS:
+[[file:imgs/gts_plus_data.png]]
