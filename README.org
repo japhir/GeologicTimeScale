@@ -108,3 +108,11 @@ And to combine the two, make sure they have precisely the same x axis and then j
 #+RESULTS:
 
 [[file:imgs/gts_plus_data.png]]
+
+* contributing
+
+If you spot any errors, please feel free to file an issue or write a pull request!
+
+* copying
+
+I've licensed the code with GPL-3, but the underlying data is copyright of the Geologic Time Scale at https://timescalefoundation.org/
